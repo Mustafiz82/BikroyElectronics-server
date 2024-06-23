@@ -117,12 +117,13 @@ async function run() {
 		});
 
 
-		app.get("/wishlist/:id", async (req, res) => {
+		app.delete("/wishlist/:id", async (req, res) => {
+			const id = req.params.id
 			const email = req.query.email;
-			const query = {email  : email }
+			const query = { _id : id }
 
-			const cursor = wishListCollection.find(query);
-			const result = await cursor.toArray();
+			const result = wishListCollection.deleteOne(query);
+			
 			res.send(result);
 		});
 
