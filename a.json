@@ -1,0 +1,345 @@
+[
+	{
+		
+		"imageUrl": "https://i.ibb.co/FKbXLmk/ezgif-7-43f9a0b057-removebg-preview.png",
+		"title": "Apple MacBook Air 13.3-Inch Retina Display 8-core Apple M1 chip with 8GB RAM",
+		"description": "Key Features\nMPN: MGN63\nModel: MacBook Air 13\" M1 Chip\nProcessor: Apple M1\nMemory: 8GB\nStorage: 256GB SSD\nDisplay: 13.3\" Retina",
+		"price": 141000,
+		"category": "Laptop",
+		"sellCount": 5
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/TMkMsTg/image-removebg-preview-15.png",
+		"title": "Dell Inspiron 15 3000 Series h",
+		"description": "Key Features\nModel: Inspiron 15\nProcessor: Intel Core i5\nMemory: 8GB\nStorage: 1TB HDD\nDisplay: 15.6\\\" FHD",
+		"price": 75000,
+		"category": "HeadPhone",
+		"sellCount": 2
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/JsX2rTw/image-removebg-preview-18.png",
+		"title": "HP Pavilion x360 Convertible",
+		"description": "Key Features\nModel: Pavilion x360\nProcessor: Intel Core i7\nMemory: 16GB\nStorage: 512GB SSD\nDisplay: 14\" FHD Touchscreen",
+		"price": 96000,
+		"category": "HeadPhone",
+		"sellCount": 1
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/vkhSbn4/image-removebg-preview-19.png",
+		"title": "Lenovo ThinkPad X1 Carbon",
+		"description": "Key Features\nModel: ThinkPad X1\nProcessor: Intel Core i7\nMemory: 16GB\nStorage: 1TB SSD\nDisplay: 14\" UHD",
+		"price": 180000,
+		"category": "Laptop",
+		"sellCount": 1
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/wsj36Hk/image-removebg-preview-21.png",
+		"title": "Asus ZenBook 14 Ultra-Slim",
+		"description": "Key Features\nModel: ZenBook 14\nProcessor: AMD Ryzen 7\nMemory: 16GB\nStorage: 512GB SSD\nDisplay: 14\" FHD",
+		"price": 89000,
+		"category": "Laptop",
+		"sellCount": 2
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/4ssJJ82/image-removebg-preview-22.png",
+		"title": "Apple AirPods Pro (2nd Generation)",
+		"description": "Key Features\nModel: AirPods Pro 2\nActive Noise Cancellation\nTransparency mode\nSpatial audio\nMagSafe charging case",
+		"price": 29900,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/3CSyK3s/image-removebg-preview-23.png",
+		"title": "Samsung Galaxy Buds Pro",
+		"description": "Key Features\nModel: Galaxy Buds Pro\nActive Noise Cancellation\nWater Resistant\nWireless Charging\nAmbient Sound",
+		"price": 21500,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/bv8TcL5/image-removebg-preview-24.png",
+		"title": "Sony WF-1000XM4 Wireless Earbuds",
+		"description": "Key Features\nModel: WF-1000XM4\nNoise Cancellation\nBattery Life: Up to 8 hours\nWater Resistant\nBluetooth 5.2",
+		"price": 24000,
+		"category": "HeadPhone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/428GGnr/image-removebg-preview-25.png",
+		"title": "JBL Tune 125TWS True Wireless",
+		"description": "Key Features\nModel: Tune 125TWS\nPure Bass Sound\nBattery Life: Up to 32 hours\nFast Pair\nComfortable Fit",
+		"price": 8500,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/LCZHQyj/image-removebg-preview-26.png",
+		"title": "Bose QuietComfort Earbuds",
+		"description": "Key Features\nModel: QuietComfort\nNoise Cancelling\nSweat and Weather Resistant\nBattery Life: Up to 6 hours\nTouch Controls",
+		"price": 26500,
+		"category": "HeadPhone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/xzTqfbg/image-removebg-preview-28.png",
+		"title": "Apple Watch Series 8 GPS + Cellularh",
+		"description": "Key Features\nModel: Apple Watch Series 8\nSize: 45mm\nGPS + Cellular\nECG app\nBlood Oxygen app",
+		"price": 55000,
+		"category": "HeadPhone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/QJ0k055/Untitled-removebg-preview.png",
+		"title": "Samsung Galaxy Watch 4",
+		"description": "Key Features\nModel: Galaxy Watch 4\nSize: 44mm\nGPS\nHeart Rate Monitor\nSleep Tracking",
+		"price": 32000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/JjstwH4/image-removebg-preview-27.png",
+		"title": "Fitbit Versa 3",
+		"description": "Key Features\nModel: Versa 3\nBuilt-in GPS\nHeart Rate Monitoring\nAlexa Built-in\nBattery Life: Up to 6 days",
+		"price": 19000,
+		"category": "HeadPhone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/tDh9Kh6/garmin-fenix-6.png",
+		"title": "Garmin Fenix 6 Pro",
+		"description": "Key Features\nModel: Fenix 6 Pro\nGPS\nHeart Rate Monitor\nWater Resistant\nBattery Life: Up to 14 days",
+		"price": 68000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/f8yrZxC/amazfit-gtr-3.png",
+		"title": "Amazfit GTR 3",
+		"description": "Key Features\nModel: GTR 3\nGPS\nHeart Rate Monitoring\nSpO2 Monitoring\nBattery Life: Up to 21 days",
+		"price": 15000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/cw1G6XZ/drone.png",
+		"title": "DJI Mavic Air 2 Fly More Combo",
+		"description": "Key Features\nModel: Mavic Air 2\nCamera: 48MP\nVideo: 4K 60fps\nFlight Time: 34 minutes\nTransmission: OcuSync 2.0",
+		"price": 110000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/LxdQjBg/dji-mini-2.png",
+		"title": "DJI Mini 2",
+		"description": "Key Features\nModel: Mini 2\nCamera: 12MP\nVideo: 4K 30fps\nFlight Time: 31 minutes\nTransmission: OcuSync 2.0",
+		"price": 57000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/2dfX7G6/parrot-anafi.png",
+		"title": "Parrot Anafi",
+		"description": "Key Features\nModel: Anafi\nCamera: 21MP\nVideo: 4K HDR\nFlight Time: 25 minutes\nTransmission: Wi-Fi",
+		"price": 85000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/NjbsbQP/autel-evo-2.png",
+		"title": "Autel Robotics EVO II",
+		"description": "Key Features\nModel: EVO II\nCamera: 48MP\nVideo: 8K\nFlight Time: 40 minutes\nTransmission: 9 km",
+		"price": 210000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	
+	{
+		
+		"imageUrl": "https://i.ibb.co/cw1G6XZ/drone.png",
+		"title": "DJI Mavic Air 2 Fly More Combo",
+		"description": "Key Features\nModel: Mavic Air 2\nCamera: 48MP\nVideo: 4K 60fps\nFlight Time: 34 minutes\nTransmission: OcuSync 2.0",
+		"price": 110000,
+		"category": "Drone",
+		"sellCount": 4
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/LxdQjBg/dji-mini-2.png",
+		"title": "DJI Mini 2",
+		"description": "Key Features\nModel: Mini 2\nCamera: 12MP\nVideo: 4K 30fps\nFlight Time: 31 minutes\nTransmission: OcuSync 2.0",
+		"price": 57000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/2dfX7G6/parrot-anafi.png",
+		"title": "Parrot Anafi",
+		"description": "Key Features\nModel: Anafi\nCamera: 21MP\nVideo: 4K HDR\nFlight Time: 25 minutes\nTransmission: Wi-Fi",
+		"price": 85000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/NjbsbQP/autel-evo-2.png",
+		"title": "Autel Robotics EVO II",
+		"description": "Key Features\nModel: EVO II\nCamera: 48MP\nVideo: 8K\nFlight Time: 40 minutes\nTransmission: 9 km",
+		"price": 210000,
+		"category": "Drone",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/FKbXLmk/ezgif-7-43f9a0b057-removebg-preview.png",
+		"title": "Apple MacBook Air 13.3-Inch Retina Display 8-core Apple M1 chip with 8GB RAM",
+		"description": "Key Features\nMPN: MGN63\nModel: MacBook Air 13\" M1 Chip\nProcessor: Apple M1\nMemory: 8GB\nStorage: 256GB SSD\nDisplay: 13.3\" Retina",
+		"price": 141000,
+		"category": "Laptop",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/6FgR0YV/dell-inspiron.png",
+		"title": "Dell Inspiron 15 3000 Series",
+		"description": "Key Features\nModel: Inspiron 15\nProcessor: Intel Core i5\nMemory: 8GB\nStorage: 1TB HDD\nDisplay: 15.6\" FHD",
+		"price": 75000,
+		"category": "Laptop",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/vVLw0jT/hp-pavilion.png",
+		"title": "HP Pavilion x360 Convertible",
+		"description": "Key Features\nModel: Pavilion x360\nProcessor: Intel Core i7\nMemory: 16GB\nStorage: 512GB SSD\nDisplay: 14\" FHD Touchscreen",
+		"price": 96000,
+		"category": "Laptop",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/zh5M8Hx/lenovo-thinkpad.png",
+		"title": "Lenovo ThinkPad X1 Carbon",
+		"description": "Key Features\nModel: ThinkPad X1\nProcessor: Intel Core i7\nMemory: 16GB\nStorage: 1TB SSD\nDisplay: 14\" UHD",
+		"price": 180000,
+		"category": "Laptop",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/j5nVbkv/asus-zenbook.png",
+		"title": "Asus ZenBook 14 Ultra-Slim",
+		"description": "Key Features\nModel: ZenBook 14\nProcessor: AMD Ryzen 7\nMemory: 16GB\nStorage: 512GB SSD\nDisplay: 14\" FHD",
+		"price": 89000,
+		"category": "Laptop",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/nkYPFqK/airpods.png",
+		"title": "Apple AirPods Pro (2nd Generation)",
+		"description": "Key Features\nModel: AirPods Pro 2\nActive Noise Cancellation\nTransparency mode\nSpatial audio\nMagSafe charging case",
+		"price": 29900,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/GR6qMZ5/samsung-galaxy-buds.png",
+		"title": "Samsung Galaxy Buds Pro",
+		"description": "Key Features\nModel: Galaxy Buds Pro\nActive Noise Cancellation\nWater Resistant\nWireless Charging\nAmbient Sound",
+		"price": 21500,
+		"category": "Earbuds",
+		"sellCount": 12
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/F5L9XJ3/sony-wf-1000xm4.png",
+		"title": "Sony WF-1000XM4 Wireless Earbuds",
+		"description": "Key Features\nModel: WF-1000XM4\nNoise Cancellation\nBattery Life: Up to 8 hours\nWater Resistant\nBluetooth 5.2",
+		"price": 24000,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/1RYcF0J/jbl-tune-125tws.png",
+		"title": "JBL Tune 125TWS True Wireless",
+		"description": "Key Features\nModel: Tune 125TWS\nPure Bass Sound\nBattery Life: Up to 32 hours\nFast Pair\nComfortable Fit",
+		"price": 8500,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/7Gh5Bz6/bose-quietcomfort.png",
+		"title": "Bose QuietComfort Earbuds",
+		"description": "Key Features\nModel: QuietComfort\nNoise Cancelling\nSweat and Weather Resistant\nBattery Life: Up to 6 hours\nTouch Controls",
+		"price": 26500,
+		"category": "Earbuds",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/YT5FYP4/apple-watch.png",
+		"title": "Apple Watch Series 8 GPS + Cellular",
+		"description": "Key Features\nModel: Apple Watch Series 8\nSize: 45mm\nGPS + Cellular\nECG app\nBlood Oxygen app",
+		"price": 55000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/CJsyH2K/samsung-galaxy-watch.png",
+		"title": "Samsung Galaxy Watch 4",
+		"description": "Key Features\nModel: Galaxy Watch 4\nSize: 44mm\nGPS\nHeart Rate Monitor\nSleep Tracking",
+		"price": 32000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/rGFSZKc/fitbit-versa-3.png",
+		"title": "Fitbit Versa 3",
+		"description": "Key Features\nModel: Versa 3\nBuilt-in GPS\nHeart Rate Monitoring\nAlexa Built-in\nBattery Life: Up to 6 days",
+		"price": 19000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/tDh9Kh6/garmin-fenix-6.png",
+		"title": "Garmin Fenix 6 Pro",
+		"description": "Key Features\nModel: Fenix 6 Pro\nGPS\nHeart Rate Monitor\nWater Resistant\nBattery Life: Up to 14 days",
+		"price": 68000,
+		"category": "Smart Watch",
+		"sellCount": 0
+	},
+	{
+		
+		"imageUrl": "https://i.ibb.co/f8yrZxC/amazfit-gtr-3.png",
+		"title": "Amazfit GTR 3",
+		"description": "Key Features\nModel: GTR 3\nGPS\nHeart Rate Monitoring\nSpO2 Monitoring\nBattery Life: Up to 21 days",
+		"price": 15000,
+		"category": "Smart Watch",
+		"sellCount": 2
+	}
+]

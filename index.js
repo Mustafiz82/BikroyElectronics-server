@@ -58,10 +58,56 @@ async function run() {
 			const result = await productsCollection.insertOne(product);
 			res.send(result);
 		});
+		// app.get("/products", async (req, res) => {
+		// 	const cursor = productsCollection.find();
+		// 	const result = await cursor.toArray();
+		// 	res.send(result);
+		// });
+
 		app.get("/products", async (req, res) => {
-			const cursor = productsCollection.find();
+			const { limit, sortBy, sortOrder, category, minPrice, maxPrice, searchText } = req.query;
+
+			// Build the query object for MongoDB
+			const query = {};
+			const searchRegex = searchText ? new RegExp(searchText, 'i') : null;
+		
+			// Add filters based on query parameters
+			if (category) {
+			  query.category = category;
+			}
+			if (minPrice && maxPrice) {
+			  query.price = { $gte: parseInt(minPrice), $lte: parseInt(maxPrice) };
+			} else if (minPrice) {
+			  query.price = { $gte: parseInt(minPrice) };
+			} else if (maxPrice) {
+			  query.price = { $lte: parseInt(maxPrice) };
+			}
+			if (searchText) {
+			  query.$or = [
+				{ title: searchRegex },
+				{ description: searchRegex },
+				{ price: parseInt(searchText) || 0 },
+				{ category: searchRegex }
+			  ];
+			}
+		
+			// Sort based on sortBy and sortOrder if provided
+			let sortOptions = {};
+			if (sortBy) {
+			  sortOptions[sortBy] = sortOrder === 'desc' ? -1 : 1;
+			}
+		
+			// Execute query with optional limit and sorting
+			let cursor = productsCollection.find(query);
+			if (sortBy) {
+			  cursor = cursor.sort(sortOptions);
+			}
+			if (limit) {
+			  cursor = cursor.limit(parseInt(limit));
+			}
+		
 			const result = await cursor.toArray();
-			res.send(result);
+			res.json(result);
 		});
 
 		app.get("/products/:id", async (req, res) => {
@@ -74,20 +120,19 @@ async function run() {
 			}
 		});
 
-		app.put('/products/update/:id' ,async(req , res) =>{
-			const id = req.params.id
+		app.put("/products/update/:id", async (req, res) => {
+			const id = req.params.id;
 			const query = { _id: new ObjectId(id) };
 
-			const updateProduct = req.body.data	
-			console.log(id ,updateProduct)
-			const result = await productsCollection.updateOne(query,  { $set: updateProduct });
-			res.send(result)
+			const updateProduct = req.body.data;
+			console.log(id, updateProduct);
+			const result = await productsCollection.updateOne(query, {
+				$set: updateProduct,
+			});
+			res.send(result);
 
-			console.log(id ,updateProduct);
-	  
-	  
-		  })
-
+			console.log(id, updateProduct);
+		});
 
 		//   Wishlist
 
@@ -98,37 +143,36 @@ async function run() {
 			const checkProduct = await wishListCollection.findOne(query);
 			console.log(checkProduct);
 
-			if(!checkProduct){
-				const result = await wishListCollection.insertOne(wishListProduct);
+			if (!checkProduct) {
+				const result = await wishListCollection.insertOne(
+					wishListProduct
+				);
 				res.send(result);
+			} else {
+				res.status(409).send({
+					message: "Product already exists in the wishlist",
+				});
 			}
-			else{
-				
-				res.status(409).send({ message: "Product already exists in the wishlist" });			}
 		});
 
 		app.get("/wishlist", async (req, res) => {
 			const email = req.query.email;
-			const query = {email  : email }
+			const query = { email: email };
 
 			const cursor = wishListCollection.find(query);
 			const result = await cursor.toArray();
 			res.send(result);
 		});
 
-
 		app.delete("/wishlist/:id", async (req, res) => {
-			const id = req.params.id
+			const id = req.params.id;
 			const email = req.query.email;
-			const query = { _id : id }
+			const query = { _id: id };
 
 			const result = wishListCollection.deleteOne(query);
-			
+
 			res.send(result);
 		});
-
-
-	  
 
 		await client.db("admin").command({ ping: 1 });
 		console.log(
