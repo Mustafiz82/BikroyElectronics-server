@@ -14,7 +14,6 @@ import { stripeWebhookHandler } from './controllers/orderController.js';
 
 const app = express()
 
-app.use(express.json({ limit: "20mb" }))
 
 app.use(cors({
   origin: ["http://localhost:5173", "https://bikroyelectronics.web.app"],
@@ -48,7 +47,7 @@ app.use(async (req, res, next) => {
         await connectDB(process.env.MONGODB_URI)
         isConnected = true
     }
-    next();
+    next(); 
 
 })
 

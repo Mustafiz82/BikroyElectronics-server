@@ -48,7 +48,7 @@ export const createOrder = async (req, res) => {
     // bKash
     if (paymentMethod === "Bkash") {
       const encodedCartIds = encodeURIComponent(JSON.stringify(cartIDs));
-      const callbackUrl = `http://localhost:3000/payment/bkash-callback?orderId=${orderId}&cartIds=${encodedCartIds}`;
+      const callbackUrl = `https://bikroyelectronics-server.vercel.app/payment/bkash-callback?orderId=${orderId}&cartIds=${encodedCartIds}`;
       const url = await createBkashPayment(orderId, ordersData.totalPrice, customerDetail.email, callbackUrl);
       return res.status(201).json({ url });
     }
@@ -118,13 +118,13 @@ export const sslSuccessCallback = async (req, res) => {
         await Cart.deleteMany({ _id: { $in: cartIds } });
       }
 
-      return res.redirect("http://localhost:5173/payment/success");
+      return res.redirect("https://bikroyelectronics.web.app/payment/success");
     } else {
-      return res.redirect(`http://localhost:5173/payment/failed?orderId=${orderId}`);
+      return res.redirect(`https://bikroyelectronics.web.app/payment/failed?orderId=${orderId}`);
     }
   } catch (error) {
     console.error("SSL Success Callback Error:", error.message);
-    return res.redirect(`http://localhost:5173/payment/failed?orderId=${orderId}`);
+    return res.redirect(`https://bikroyelectronics.web.app/payment/failed?orderId=${orderId}`);
   }
 };
 
@@ -132,13 +132,13 @@ export const sslSuccessCallback = async (req, res) => {
 export const sslFailCallback = async (req, res) => {
   const { orderId } = req.params;
   const reason = req.body.error || req.body.status || "Unknown payment failure";
-  return res.redirect(`http://localhost:5173/payment/failed?orderId=${orderId}&reason=${encodeURIComponent(reason)}`);
+  return res.redirect(`https://bikroyelectronics.web.app/payment/failed?orderId=${orderId}&reason=${encodeURIComponent(reason)}`);
 };
 
 // 5. SSLCommerz Cancel Callback (POST)
 export const sslCancelCallback = async (req, res) => {
   const { orderId } = req.params;
-  return res.redirect(`http://localhost:5173/payment/cancel?orderId=${orderId}`);
+  return res.redirect(`https://bikroyelectronics.web.app/payment/cancel?orderId=${orderId}`);
 };
 
 // 6. bKash Callback Handler (GET)
@@ -154,9 +154,9 @@ export const bkashCallbackHandler = async (req, res) => {
 
   if (status !== "success") {
     if (status === "cancel") {
-      return res.redirect(`http://localhost:5173/payment/cancel?orderId=${orderId}`);
+      return res.redirect(`https://bikroyelectronics.web.app/payment/cancel?orderId=${orderId}`);
     }
-    return res.redirect(`http://localhost:5173/payment/failed?orderId=${orderId}&reason=${status}`);
+    return res.redirect(`https://bikroyelectronics.web.app/payment/failed?orderId=${orderId}&reason=${status}`);
   }
 
   try {
@@ -177,13 +177,13 @@ export const bkashCallbackHandler = async (req, res) => {
         await Cart.deleteMany({ _id: { $in: parsedCartIds } });
       }
 
-      return res.redirect(`http://localhost:5173/payment/success?orderId=${orderId}`);
+      return res.redirect(`https://bikroyelectronics.web.app/payment/success?orderId=${orderId}`);
     } else {
-      return res.redirect(`http://localhost:5173/payment/failed?orderId=${orderId}&reason=${encodeURIComponent(data.statusMessage)}`);
+      return res.redirect(`https://bikroyelectronics.web.app/payment/failed?orderId=${orderId}&reason=${encodeURIComponent(data.statusMessage)}`);
     }
   } catch (error) {
     console.error("bKash execute error:", error.message);
-    return res.redirect(`http://localhost:5173/payment/failed?orderId=${orderId}&reason=execution_error`);
+    return res.redirect(`https://bikroyelectronics.web.app/payment/failed?orderId=${orderId}&reason=execution_error`);
   }
 };
 

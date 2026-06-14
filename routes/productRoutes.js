@@ -22,6 +22,6 @@ router.get('/productCount', getProductCount);
 router.get('/products/:id', getProductById);
 router.post('/products', createProduct);
 router.put('/products/update/:id', updateProduct);
-router.put('/products/delete/:id', deleteProduct);
+router.delete('/products/delete/:id', deleteProduct);
 
 export default router;

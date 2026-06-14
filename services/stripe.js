@@ -25,8 +25,8 @@ export const createStripeSession = async (orderId, cartData, customerDetail) => 
       email: customerDetail.email.toLowerCase()
     },
     mode: "payment",
-    success_url: "http://localhost:3000/payment/success",
-    cancel_url: `http://localhost:3000/payment/cancel?orderId=${orderId}`
+    success_url: "https://bikroyelectronics.web.app/payment/success",
+    cancel_url: `https://bikroyelectronics.web.app/payment/cancel?orderId=${orderId}`
   });
 
   return session.url;

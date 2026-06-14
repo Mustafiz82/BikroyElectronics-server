@@ -40,8 +40,8 @@ export const createStripeSession = async (req, res) => {
         email: customerDetail.email.toLowerCase()
       },
       mode: "payment",
-      success_url: "http://localhost:3000/payment/success",
-      cancel_url: `http://localhost:3000/payment/cancel?orderId=${orderId}`
+      success_url: "https://bikroyelectronics-server.vercel.app/payment/success",
+      cancel_url: `https://bikroyelectronics-server.vercel.app/payment/cancel?orderId=${orderId}`
     });
 
     res.status(201).json({ url: session.url });
