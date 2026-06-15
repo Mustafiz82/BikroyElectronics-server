@@ -167,26 +167,28 @@ export const fixPrices = async (req, res) => {
 // 7. Utility: Set a baseline random sell count for placeholder products
 export const fixSellCount = async (req, res) => {
   try {
-    const result = await Product.updateMany(
-      { sellCount: { $in: [0, "0", null] } },
-      [
-        {
-          $set: {
-            sellCount: {
-              $add: [10, { $floor: { $multiply: [{ $rand: {} }, 81] } }]
-            }
-          }
-        }
-      ]
-    );
+    const products = await Product.find({
+      sellCount: { $in: [0, "0", null] }
+    });
+
+    let modified = 0;
+
+    for (const product of products) {
+      product.sellCount = Math.floor(Math.random() * 81) + 10; // 10-90
+      await product.save();
+      modified++;
+    }
 
     res.json({
       message: "sellCount updated successfully",
-      matched: result.matchedCount,
-      modified: result.modifiedCount
+      matched: products.length,
+      modified
     });
   } catch (error) {
-    res.status(500).json({ message: "Server error", error: error.message });
+    res.status(500).json({
+      message: "Server error",
+      error: error.message
+    });
   }
 };
 
