@@ -1,4 +1,6 @@
 import User from '../models/User.js'
+import jwt from "jsonwebtoken";
+
 
 // Get single user details by email
 export const getUserByEmail = async (req, res) => {
@@ -26,6 +28,9 @@ export const createUser = async (req, res) => {
 
     const newUser = new User(userData);
     const result = await newUser.save();
+
+
+    
     res.status(201).json(result);
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -77,6 +82,46 @@ export const makeAdmin = async (req, res) => {
     res.json(result);
   } catch (error) {
     res.status(500).json({ message: error.message });
+  }
+};
+
+
+
+
+export const setJwtToken = async (req, res) => {
+  try {
+
+
+    console.log("hit token request")
+    const {  email } = req.body;
+
+    if (!email) {
+      return res.status(400).json({
+        error: " email is required",
+      });
+    }
+
+    const token = jwt.sign(
+      { email },
+      process.env.JWT_SECRET,
+      { expiresIn: "1d" }
+    );
+
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+
+    return res.status(200).json({
+      success: true,
+      message: "JWT cookie set successfully",
+    });
+  } catch (error) {
+    return res.status(500).json({
+      error: error.message,
+    });
   }
 };
 

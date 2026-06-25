@@ -85,6 +85,8 @@ export const stripeWebhookHandler = async (req, res) => {
         const parsedCartIds = JSON.parse(cartIDs);
         await Cart.deleteMany({ _id: { $in: parsedCartIds } });
       }
+
+      
       console.log(`✅ Order ${orderID} updated to completed via Stripe Webhook`);
     } catch (err) {
       console.error("Stripe Webhook Database Error:", err.message);

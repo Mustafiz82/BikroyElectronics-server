@@ -4,11 +4,12 @@ import {
   createCategory,
   deleteCategory
 } from '../controllers/categoryController.js';
+import { verifyAdmin, verifyToken } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
 router.get('/categories', getAllCategories);
-router.post('/categories', createCategory);
-router.delete('/categories/:id', deleteCategory);
+router.post('/categories', verifyToken , verifyAdmin, createCategory);
+router.delete('/categories/:id', verifyToken , verifyAdmin, deleteCategory);
 
 export default router;
